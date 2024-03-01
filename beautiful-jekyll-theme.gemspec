@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata      = {
     "changelog_uri"     => "https://beautifuljekyll.com/updates/",
-    "documentation_uri" => "https://github.com/daattali/beautiful-jekyll#readme"
+    "documentation_uri" => "https://github.com/mazino2d/mazino2d.github.io#readme"
   }
 
   spec.add_runtime_dependency "jekyll", "~> 3.9.3"

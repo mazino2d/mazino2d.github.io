@@ -126,7 +126,7 @@ subtitle: Here you'll find all the ways to get in touch with me
 
 If you don't want to use any parameters on a page, you still need to use the two dashed lines. If you don't, then your file will be shown as-is without the Beautiful Jekyll template.
 
-You can look at the top of [`aboutme.md`](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/aboutme.md) as an example.
+You can look at the top of [`aboutme.md`](https://raw.githubusercontent.com/mazino2d/mazino2d.github.io/master/aboutme.md) as an example.
 
 **Important takeaway: ALWAYS add the YAML front matter, which is two lines of three dashes, to EVERY page. If you have any parameters, they go between the two lines.**
 
@@ -167,7 +167,7 @@ readtime    | If you want a post to show how many minutes it will take to read i
 show-avatar | If you have an avatar configured in the `_config.yml` but you want to turn it off on a specific page, use `show-avatar: false`.
 social-share | By default, every blog post has buttons to share the page on social media. If you want to turn this feature off, use `social-share: false`.
 nav-short   | By default, the navigation bar gets shorter after scrolling down the page. If you want the navigation bar to always be short on a certain page, use `nav-short: true`
-gh-repo   | If you want to show GitHub buttons at the top of a post, this sets the GitHub repo name (eg. `daattali/beautiful-jekyll`). You must also use the `gh-badge` parameter to specify what buttons to show.
+gh-repo   | If you want to show GitHub buttons at the top of a post, this sets the GitHub repo name (eg. `mazino2d/mazino2d.github.io`). You must also use the `gh-badge` parameter to specify what buttons to show.
 gh-badge  | Select which GitHub buttons to display. Available options are: [star, watch, fork, follow]. You must also use the `gh-repo` parameter to specify the GitHub repo.
 last-updated | If you want to show that a blog post was updated after it was originally released, you can specify an "Updated on" date.
 layout      | What type of page this is (default is `post` for blog posts and `page` for other pages). See _Page types_ section below for more information.
@@ -215,13 +215,13 @@ You can also check out the [advanced installation methods](https://beautifuljeky
 
 Visit the [FAQ page](https://beautifuljekyll.com/faq) for answers to commonly asked questions.
 
-**If you choose to [become a sponsor](https://beautifuljekyll.com/plans/), you'll have access to my [office hours](https://beautifuljekyll.com/officehours/) where you can ask for help.** You can also use the [Discussions](https://github.com/daattali/beautiful-jekyll/discussions) area to try and get help from the community.
+**If you choose to [become a sponsor](https://beautifuljekyll.com/plans/), you'll have access to my [office hours](https://beautifuljekyll.com/officehours/) where you can ask for help.** You can also use the [Discussions](https://github.com/mazino2d/mazino2d.github.io/discussions) area to try and get help from the community.
 
 Beautiful Jekyll is used by 50,000+ people with wildly varying degrees of web skills, so it's impossible to answer all the questions that may arise. For any question that's not specifically related to Beautiful Jekyll and is more about Jekyll or web development in general, the answer can often be found on Google, in the [Jekyll documentation](https://jekyllrb.com/), or on the [Jekyll support forum](https://talk.jekyllrb.com/).
 
 # Contributions
 
-Thank you to [all past contributors](https://github.com/daattali/beautiful-jekyll/graphs/contributors). If you find any problems or would like to contribute in any way, feel free to create a pull request/open an issue/send me a message.
+Thank you to [all past contributors](https://github.com/mazino2d/mazino2d.github.io/graphs/contributors). If you find any problems or would like to contribute in any way, feel free to create a pull request/open an issue/send me a message.
 
 You can also contribute by becoming an [official sponsor](https://github.com/sponsors/daattali/sponsorships?tier_id=39856) to help keep Beautiful Jekyll well-maintained!
 
