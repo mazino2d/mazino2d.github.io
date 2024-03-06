@@ -244,7 +244,7 @@ f1= f1_score(y_true, y_pred_class)
 
 Pretty much in every binary classification problem. It is my go-to metric when working on those problems. It can be easily explained to business stakeholders.
 
-## 10. ROC AUC | Receiver Operating Characteristic
+## 10. ROC AUC score
 
 ROC Curve is a chart that visualizes the tradeoff between true positive rate (TPR) and false positive rate (FPR). Basically, for every threshold, we calculate TPR and FPR and plot it on one chart.
 
@@ -344,7 +344,7 @@ matthews_corr = matthews_corrcoef(y_true, y_pred_class)
 
 ## 14. Log loss
 
-Log loss is often used as the objective function that is optimized under the hood of machine learning models. Yet, it can also be used as a performance metric.
+Log loss is often used as the **objective function** that is optimized under the hood of machine learning models. Yet, it can also be used as a performance metric.
 
 Basically, we calculate the difference between ground truth and predicted score for every observation and average those errors over all observations. For one observation the error formula reads:
 
