@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Evaluation Metrics for Binary Classification
-# subtitle: Việc chọn cách đánh giá phù hợp với bài toán chính là điều kiện tiên quyết để tìm ra lời giải.
+# subtitle: 
 # gh-repo: mazino2d/mazino2d.github.io
 # gh-badge: [star, fork, follow]
 tags: [machine-learning]
