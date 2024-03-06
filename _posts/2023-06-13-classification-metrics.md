@@ -320,7 +320,7 @@ cohen_kappa = cohen_kappa_score(y_true, y_pred_class)
 
 This metric is not used heavily in the context of classification. Yet it can work really well for **imbalanced problems** and seems like **a great companion/alternative to accuracy**.
 
-## 13. Matthews Correlation Coefficient MCC
+## 13. Matthews Correlation Coefficient
 
 It’s a **correlation between predicted classes and ground truth**. It can be calculated based on values from the confusion matrix. Alternatively, you could also calculate the correlation between `y_true` and `y_pred`.
 
@@ -364,3 +364,24 @@ loss = log_loss(y_true, y_pred)
 #### When to use it:
 
 Pretty much always there is a performance metric that better matches your business problem. Because of that, I would use log-loss as an objective for your model with some other metric to evaluate performance.
+
+## 15. Brier score
+
+It is a measure of how far your predictions lie from the true values. For one observation it simply reads:
+
+```
+brierloss = (y_pred - t_true)^2
+```
+
+Basically, it is a **mean square error** in the probability space and because of that, it is usually used to calibrate probabilities of the machine learning models.
+
+#### How to compute:
+
+```python
+from sklearn.metrics import brier_score_loss
+brier_loss = brier_score_loss(y_true, y_pred_pos)
+```
+
+#### When to use it:
+
+When you care about **calibrated probabilities**.
