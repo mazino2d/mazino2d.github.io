@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Evaluation Metrics for Binary Classification
-# subtitle: 
+subtitle: A comprehensive guide to choosing the best metrics for binary classification problems
 # gh-repo: mazino2d/mazino2d.github.io
 # gh-badge: [star, fork, follow]
 tags: [machine-learning]
@@ -217,7 +217,7 @@ accuracy = accuracy_score(y_true, y_pred_class) # or optionally (tp + tn) / (tp 
 
 #### When to use it:
 
-- When your problem is balanced using accuracy is usually **    **. An additional benefit is that it is really **easy to explain** it to non-technical stakeholders in your project,
+- When your problem is balanced using accuracy is usually **a good start**. An additional benefit is that it is really **easy to explain** it to non-technical stakeholders in your project,
 - When every class is **equally important** to you.
 
 ## 9. F-score
