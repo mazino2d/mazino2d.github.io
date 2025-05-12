@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sapiens: A Brief History of Humankind - Summary
+title: Sapiens - A Brief History of Humankind - Summary
 subtitle: Key insights from Yuval Noah Harari's groundbreaking book
 # gh-repo: mazino2d/mazino2d.github.io
 # gh-badge: [star, fork, follow]
