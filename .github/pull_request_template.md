@@ -1,5 +1,24 @@
-Please note that if you are trying to update **your** website, this is the wrong place to do so. Please carefully follow the Beautiful Jekyll instructions (found at https://github.com/mazino2d/mazino2d.github.io#readme) and make sure you submit changes to **your** version of the project.
+## Description
+<!-- Brief description of changes in this PR -->
 
-If your intention is to submit a Pull Request, please describe what your pull request achieves.
+## Type of Change
+<!-- Mark [x] for applicable items -->
+- [ ] New blog post
+- [ ] Update existing post
+- [ ] UI/UX improvement
+- [ ] Bug fix
+- [ ] Configuration update
+- [ ] Other (describe below)
 
-Thank you!
+## Checklist
+- [ ] Tested preview locally (`bundle exec jekyll serve`)
+- [ ] Checked spelling and grammar
+- [ ] Optimized images (if applicable)
+- [ ] Updated metadata (title, tags, date, etc.)
+- [ ] All links are working
+
+## Screenshots
+<!-- Add screenshots if there are UI changes -->
+
+## Additional Notes
+<!-- Any additional information -->
