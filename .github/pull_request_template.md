@@ -1,3 +1,5 @@
+# Pull Request Template
+
 ## Description
 <!-- Brief description of changes in this PR -->
 
@@ -11,6 +13,7 @@
 - [ ] Other (describe below)
 
 ## Checklist
+
 - [ ] Tested preview locally (`bundle exec jekyll serve`)
 - [ ] Checked spelling and grammar
 - [ ] Optimized images (if applicable)
