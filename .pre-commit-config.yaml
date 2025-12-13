@@ -4,14 +4,14 @@ repos:
     hooks:
       - id: lint-markdown
         name: Lint Markdown files
-        entry: markdownlint-cli2
+        entry: markdownlint-cli2 --config .linter/markdownlint.yaml
         language: node
         files: \.md$
         pass_filenames: true
         additional_dependencies: [markdownlint-cli2]
       - id: lint-yaml
         name: Lint YAML files
-        entry: yamllint
+        entry: yamllint -c .linter/yamllint.yaml
         language: conda
         files: \.(yaml|yml)$
         pass_filenames: true
