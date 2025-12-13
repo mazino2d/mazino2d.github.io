@@ -1,0 +1,10 @@
+---
+repos:
+  - repo: local
+    hooks:
+      - id: lint-markdown
+        name: Lint Markdown files
+        entry: npx --yes markdownlint-cli2
+        language: system
+        files: \.md$
+        pass_filenames: true
