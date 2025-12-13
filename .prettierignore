@@ -1,13 +1,10 @@
-# Jekyll template files with Liquid syntax
-_includes/
-_layouts/
+# CSS/JS files with Jekyll front matter and Liquid syntax
+# These are template files that get processed by Jekyll
 assets/css/beautifuljekyll.css
 assets/css/beautifuljekyll-minimal.css
 assets/js/staticman.js
 
-# Jekyll build output
-_site/
-.jekyll-cache/
-
-# Vendor
-vendor/
+# HTML files with Liquid syntax in tag attributes
+# Prettier's Liquid plugin cannot parse these correctly
+_includes/head.html
+_includes/staticman-comments.html

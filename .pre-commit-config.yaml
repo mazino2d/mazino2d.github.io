@@ -5,4 +5,4 @@ repos:
     hooks:
       - id: prettier
         types_or: [markdown, yaml, json, html, css, javascript]
-        # exclude: ^(_site/|.jekyll-cache/|vendor/)
+        exclude: ^(_site/|.jekyll-cache/|vendor/)
