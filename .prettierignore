@@ -1,0 +1,13 @@
+# Jekyll template files with Liquid syntax
+_includes/
+_layouts/
+assets/css/beautifuljekyll.css
+assets/css/beautifuljekyll-minimal.css
+assets/js/staticman.js
+
+# Jekyll build output
+_site/
+.jekyll-cache/
+
+# Vendor
+vendor/

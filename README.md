@@ -45,28 +45,28 @@ Visit the live site at: [https://mazino2d.github.io](https://mazino2d.github.io)
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/mazino2d/mazino2d.github.io.git
-    cd mazino2d.github.io
-    ```
+   ```bash
+   git clone https://github.com/mazino2d/mazino2d.github.io.git
+   cd mazino2d.github.io
+   ```
 
 2. Install dependencies:
 
-    ```bash
-    bundle install
-    ```
+   ```bash
+   bundle install
+   ```
 
 3. Run the local server:
 
-    ```bash
-    bundle exec jekyll serve
-    ```
+   ```bash
+   bundle exec jekyll serve
+   ```
 
 4. Open your browser and navigate to:
 
-    ```plaintext
-    http://localhost:4000
-    ```
+   ```plaintext
+   http://localhost:4000
+   ```
 
 The site will automatically rebuild when you make changes to the source files.
 
@@ -83,21 +83,22 @@ This project uses pre-commit hooks to automatically check code quality before ea
 
 1. Install pre-commit:
 
-    ```bash
-    # macOS
-    brew install pre-commit
-    
-    # or using pip
-    pip install pre-commit
-    ```
+   ```bash
+   # macOS
+   brew install pre-commit
+
+   # or using pip
+   pip install pre-commit
+   ```
 
 2. Install the git hook scripts:
 
-    ```bash
-    pre-commit install
-    ```
+   ```bash
+   pre-commit install
+   ```
 
 3. Pre-commit will automatically create isolated environments and install dependencies:
+
    - Node.js environment for `markdownlint-cli2`
    - Conda environment for `yamllint`
 
@@ -170,21 +171,21 @@ git commit --no-verify
 
 1. Create a new Markdown file in the `_posts` directory with the naming format:
 
-    ```plaintext
-    YYYY-MM-DD-title.md
-    ```
+   ```plaintext
+   YYYY-MM-DD-title.md
+   ```
 
 2. Add front matter at the top of the file:
 
-    ```yaml
-    ---
-    layout: post
-    title: Your Post Title
-    subtitle: Optional subtitle
-    tags: [tag1, tag2]
-    comments: true
-    ---
-    ```
+   ```yaml
+   ---
+   layout: post
+   title: Your Post Title
+   subtitle: Optional subtitle
+   tags: [tag1, tag2]
+   comments: true
+   ---
+   ```
 
 3. Write your content in Markdown below the front matter.
 

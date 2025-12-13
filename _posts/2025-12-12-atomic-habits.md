@@ -111,4 +111,4 @@ Clear concludes with insights on maintaining habits for life:
 
 The key takeaway: You do not need to make massive changes to transform your life. Small habits, repeated consistently, can lead to remarkable results.
 
-Have you read *Atomic Habits*? What habits are you working on? Share your thoughts in the comments below!
+Have you read _Atomic Habits_? What habits are you working on? Share your thoughts in the comments below!

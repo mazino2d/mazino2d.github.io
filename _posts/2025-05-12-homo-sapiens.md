@@ -74,4 +74,4 @@ Harari concludes by examining the challenges and opportunities of the modern era
 
 **Sapiens** is a compelling exploration of human history, offering profound insights into how we became who we are today. By understanding our past, we can better navigate the challenges of the future.
 
-Have you read *Sapiens*? Share your thoughts in the comments below!
+Have you read _Sapiens_? Share your thoughts in the comments below!

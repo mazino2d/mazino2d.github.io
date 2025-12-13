@@ -27,7 +27,7 @@ Optional but recommended:
 
 - Use clear heading hierarchy (h2, h3, h4)
 - Add blank lines between sections for readability
-- Use code blocks with language specification (e.g., ```python,```javascript)
+- Use code blocks with language specification (e.g., `python,`javascript)
 - Include alt text for all images
 
 ## Writing Style

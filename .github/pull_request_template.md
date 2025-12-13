@@ -1,10 +1,13 @@
 # Pull Request Template
 
 ## Description
+
 <!-- Brief description of changes in this PR -->
 
 ## Type of Change
+
 <!-- Mark [x] for applicable items -->
+
 - [ ] New blog post
 - [ ] Update existing post
 - [ ] UI/UX improvement
@@ -21,7 +24,9 @@
 - [ ] All links are working
 
 ## Screenshots
+
 <!-- Add screenshots if there are UI changes -->
 
 ## Additional Notes
+
 <!-- Any additional information -->
