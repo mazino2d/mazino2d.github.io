@@ -1,3 +1,4 @@
+---
 name: Build and Deploy Jekyll site
 on:
   push:
