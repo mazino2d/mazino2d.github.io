@@ -49,7 +49,7 @@ round-avatar: true
 social-network-links:
   email: "mazino2d@gmail.com"
   github: mazino2d
-  linkedin: mazino2d
+  linkedin: khoidd
 #  rss: true  # remove this line if you don't want to show an RSS link at the bottom
 #  facebook: deanattali
 #  twitter: daattali
@@ -287,5 +287,4 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
+# Beautiful Jekyll / Urek Mazino
