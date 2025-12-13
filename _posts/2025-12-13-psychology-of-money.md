@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Psychology of Money
-subtitle: Key insights from Morgan Housel's essential guide to understanding money and behavior
+subtitle: Why doing well with money has little to do with intelligence and everything to do with behavior
 tags: [book]
 comments: true
 ---
