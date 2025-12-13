@@ -49,4 +49,4 @@ overrides:
   - files: "*.xml"
     options:
       printWidth: 120
-      xmlWhitespaceSensitivity: strict
+      htmlWhitespaceSensitivity: strict
