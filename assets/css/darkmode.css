@@ -1,0 +1,241 @@
+---
+layout: null
+---
+
+/* Dark Mode Styles */
+
+/* Root variables for color scheme */
+:root {
+  --bg-color: {{ site.page-col | default: "#FFFFFF" }};
+  --text-color: {{ site.text-col | default: "#404040" }};
+  --link-color: {{ site.link-col | default: "#008AFF" }};
+  --hover-color: {{ site.hover-col | default: "#0085A1" }};
+  --navbar-bg: {{ site.navbar-col | default: "#EAEAEA" }};
+  --navbar-text: {{ site.navbar-text-col | default: "#404040" }};
+  --footer-bg: {{ site.footer-col | default: "#EAEAEA" }};
+  --footer-text: {{ site.footer-text-col | default: "#777777" }};
+  --border-color: #DDDDDD;
+  --code-bg: #F5F5F5;
+  --blockquote-color: #808080;
+}
+
+/* Dark mode color scheme */
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --link-color: #4da3ff;
+  --hover-color: #6bb6ff;
+  --navbar-bg: #2d2d2d;
+  --navbar-text: #e0e0e0;
+  --footer-bg: #2d2d2d;
+  --footer-text: #b0b0b0;
+  --border-color: #404040;
+  --code-bg: #2d2d2d;
+  --blockquote-color: #b0b0b0;
+}
+
+/* Apply color variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover,
+a:focus {
+  color: var(--hover-color);
+}
+
+blockquote {
+  color: var(--blockquote-color);
+}
+
+/* Navbar dark mode */
+.navbar-custom {
+  background-color: var(--navbar-bg);
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+  color: var(--navbar-text);
+}
+
+.navbar-custom .navbar-nav .nav-link:hover,
+.navbar-custom .navbar-nav .nav-link:focus {
+  color: var(--hover-color);
+}
+
+/* Footer dark mode */
+footer {
+  background-color: var(--footer-bg);
+  border-top: 1px solid var(--border-color);
+  color: var(--footer-text);
+  transition: background-color 0.3s ease;
+}
+
+footer a {
+  color: var(--footer-text);
+}
+
+footer a:hover {
+  color: var(--hover-color);
+}
+
+/* Code blocks dark mode */
+[data-theme="dark"] pre,
+[data-theme="dark"] code {
+  background-color: var(--code-bg);
+  color: #f8f8f2;
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .highlight {
+  background-color: var(--code-bg);
+}
+
+/* Post content dark mode */
+[data-theme="dark"] .post-preview {
+  border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .blog-tags a {
+  background-color: var(--code-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .blog-tags a:hover {
+  background-color: var(--navbar-bg);
+  color: var(--hover-color);
+}
+
+/* Pagination dark mode */
+[data-theme="dark"] .pagination .page-item .page-link {
+  background-color: var(--navbar-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .pagination .page-item.active .page-link {
+  background-color: var(--link-color);
+  border-color: var(--link-color);
+}
+
+/* Table dark mode */
+[data-theme="dark"] table {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] table thead {
+  background-color: var(--navbar-bg);
+}
+
+[data-theme="dark"] table tbody tr {
+  border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] table tbody tr:hover {
+  background-color: var(--navbar-bg);
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navbar-text);
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  border: none;
+  background: transparent;
+  margin-left: 1rem;
+}
+
+.dark-mode-toggle:hover {
+  color: var(--hover-color);
+}
+
+.dark-mode-toggle i {
+  transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle:hover i {
+  transform: rotate(20deg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .dark-mode-toggle {
+    margin-left: 0;
+    padding: 0.5rem;
+  }
+}
+
+/* Image adjustments for dark mode */
+[data-theme="dark"] img {
+  opacity: 0.9;
+}
+
+[data-theme="dark"] img:hover {
+  opacity: 1;
+}
+
+/* Search box dark mode */
+[data-theme="dark"] #nav-search-box {
+  background-color: var(--navbar-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] #search-results-container {
+  background-color: var(--navbar-bg);
+  border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] #search-results-container a {
+  color: var(--link-color);
+}
+
+/* Card styles for dark mode */
+[data-theme="dark"] .card {
+  background-color: var(--navbar-bg);
+  border: 1px solid var(--border-color);
+}
+
+/* Dropdown menu dark mode */
+[data-theme="dark"] .dropdown-menu {
+  background-color: var(--navbar-bg);
+  border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .dropdown-item {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .dropdown-item:hover {
+  background-color: var(--code-bg);
+  color: var(--hover-color);
+}
+
+/* Smooth transitions for theme switching */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Preserve syntax highlighting colors in dark mode */
+[data-theme="dark"] .highlight .c { color: #6a9955; } /* Comment */
+[data-theme="dark"] .highlight .k { color: #569cd6; } /* Keyword */
+[data-theme="dark"] .highlight .s { color: #ce9178; } /* String */
+[data-theme="dark"] .highlight .n { color: #9cdcfe; } /* Name */
+[data-theme="dark"] .highlight .o { color: #d4d4d4; } /* Operator */
+[data-theme="dark"] .highlight .m { color: #b5cea8; } /* Number */
