@@ -8,3 +8,9 @@ repos:
         language: system
         files: \.md$
         pass_filenames: true
+      - id: lint-yaml
+        name: Lint YAML files
+        entry: yamllint
+        language: conda
+        files: \.(yaml|yml)$
+        pass_filenames: true
