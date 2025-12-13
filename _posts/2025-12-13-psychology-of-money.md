@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Psychology of Money - Timeless Lessons on Wealth, Greed, and Happiness - Summary
+title: The Psychology of Money
 subtitle: Key insights from Morgan Housel's essential guide to understanding money and behavior
 tags: [book]
 comments: true
