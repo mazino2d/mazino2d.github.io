@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sapiens - A Brief History of Humankind - Summary
-subtitle: Key insights from Yuval Noah Harari's groundbreaking book
+title: Sapiens - A Brief History of Humankind
+subtitle: How Homo sapiens conquered the world through myths, agriculture, and science
 # gh-repo: mazino2d/mazino2d.github.io
 # gh-badge: [star, fork, follow]
 tags: [book]

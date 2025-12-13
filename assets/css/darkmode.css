@@ -24,7 +24,6 @@ layout: null
   --bg-color: #1a1a1a;
   --text-color: #e0e0e0;
   --link-color: #4da3ff;
-  --hover-color: #6bb6ff;
   --navbar-bg: #2d2d2d;
   --navbar-text: #e0e0e0;
   --footer-bg: #2d2d2d;
@@ -32,6 +31,10 @@ layout: null
   --border-color: #404040;
   --code-bg: #2d2d2d;
   --blockquote-color: #b0b0b0;
+  --title-color: #ffffff;
+  --subtitle-color: #e8e6e3;
+  --readmore-color: #ffffff;
+  --tag-label-color: #ffffff;
 }
 
 /* Apply color variables */
@@ -104,6 +107,35 @@ footer a:hover {
   border-bottom: 1px solid var(--border-color);
 }
 
+/* Post title styling - brighter in dark mode */
+[data-theme="dark"] .post-preview .post-title {
+  color: var(--title-color) !important;
+}
+
+[data-theme="dark"] .post-preview .post-title:hover {
+  color: var(--hover-color) !important;
+}
+
+/* Post subtitle styling */
+.post-preview .post-subtitle {
+  color: #666666;
+}
+
+[data-theme="dark"] .post-preview .post-subtitle {
+  color: var(--subtitle-color);
+  font-weight: 300;
+}
+
+/* Read More link styling */
+[data-theme="dark"] .post-preview .post-read-more {
+  color: var(--readmore-color) !important;
+  font-weight: 800;
+}
+
+[data-theme="dark"] .post-preview .post-read-more:hover {
+  color: var(--hover-color) !important;
+}
+
 [data-theme="dark"] .blog-tags a {
   background-color: var(--code-bg);
   color: var(--text-color);
@@ -113,6 +145,18 @@ footer a:hover {
 [data-theme="dark"] .blog-tags a:hover {
   background-color: var(--navbar-bg);
   color: var(--hover-color);
+}
+
+/* Tags label styling - black in light mode, white in dark mode */
+.blog-tags span {
+  color: #1a1a1a;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+[data-theme="dark"] .blog-tags span {
+  color: var(--tag-label-color);
+  font-weight: 600;
 }
 
 /* Pagination dark mode */

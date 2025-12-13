@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Atomic Habits - An Easy & Proven Way to Build Good Habits & Break Bad Ones - Summary
-subtitle: Key insights from James Clear's transformative guide to behavior change
+title: Atomic Habits
+subtitle: How tiny changes create remarkable results and why 1% better every day matters
 # gh-repo: mazino2d/mazino2d.github.io
 # gh-badge: [star, fork, follow]
 tags: [book]
