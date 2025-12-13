@@ -1,0 +1,52 @@
+---
+# Prettier configuration
+printWidth: 80
+tabWidth: 2
+useTabs: false
+semi: true
+singleQuote: false
+quoteProps: as-needed
+trailingComma: es5
+bracketSpacing: true
+arrowParens: always
+proseWrap: preserve
+htmlWhitespaceSensitivity: css
+endOfLine: lf
+
+# Overrides for specific file types
+overrides:
+  # Markdown files
+  - files: "*.md"
+    options:
+      printWidth: 100
+      proseWrap: preserve
+
+  # YAML files
+  - files: ["*.yml", "*.yaml"]
+    options:
+      printWidth: 100
+
+  # CSS files
+  - files: ["*.css", "*.scss", "*.sass"]
+    options:
+      printWidth: 100
+      singleQuote: false
+
+  # HTML files
+  - files: "*.html"
+    options:
+      printWidth: 120
+      htmlWhitespaceSensitivity: strict
+
+  # JavaScript files
+  - files: ["*.js", "*.jsx"]
+    options:
+      printWidth: 80
+      semi: true
+      singleQuote: false
+
+  # XML files
+  - files: "*.xml"
+    options:
+      printWidth: 120
+      xmlWhitespaceSensitivity: strict
