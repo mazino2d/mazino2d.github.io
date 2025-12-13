@@ -7,4 +7,5 @@ assets/js/staticman.js
 # HTML files with Liquid syntax in tag attributes
 # Prettier's Liquid plugin cannot parse these correctly
 _includes/head.html
+_includes/header.html
 _includes/staticman-comments.html
