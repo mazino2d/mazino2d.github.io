@@ -41,7 +41,7 @@ Visit the live site at: [https://mazino2d.github.io](https://mazino2d.github.io)
 - Bundler
 - Jekyll
 
-### Setup
+### Compilation Setup
 
 1. Clone the repository:
 
@@ -69,6 +69,61 @@ Visit the live site at: [https://mazino2d.github.io](https://mazino2d.github.io)
     ```
 
 The site will automatically rebuild when you make changes to the source files.
+
+## Pre-commit Setup (Optional)
+
+This project uses pre-commit hooks to automatically lint Markdown files before each commit.
+
+### Installing Pre-commit
+
+1. Install pre-commit:
+
+    ```bash
+    # macOS
+    brew install pre-commit
+    
+    # or using pip
+    pip install pre-commit
+    ```
+
+2. Install the git hook scripts:
+
+    ```bash
+    pre-commit install
+    ```
+
+### Running Pre-commit Manually
+
+To run pre-commit hooks on all files manually:
+
+```bash
+pre-commit run --all-files
+```
+
+To run pre-commit on specific files:
+
+```bash
+pre-commit run --files path/to/file.md
+```
+
+### Pre-commit Configuration
+
+The project uses `markdownlint-cli2` to check Markdown files. The configuration is in `.pre-commit-config.yaml`.
+
+### Troubleshooting
+
+If pre-commit fails:
+
+1. Review the error messages
+2. Fix the issues in your Markdown files
+3. Stage the fixes: `git add .`
+4. Try committing again
+
+To skip pre-commit hooks (not recommended):
+
+```bash
+git commit --no-verify
+```
 
 ## Project Structure
 
