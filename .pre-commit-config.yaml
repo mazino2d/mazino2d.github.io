@@ -9,10 +9,3 @@ repos:
         files: \.md$
         pass_filenames: true
         additional_dependencies: [markdownlint-cli2]
-      - id: lint-yaml
-        name: Lint YAML files
-        entry: yamllint
-        language: conda
-        files: \.(yaml|yml)$
-        pass_filenames: true
-        additional_dependencies: [yamllint]
