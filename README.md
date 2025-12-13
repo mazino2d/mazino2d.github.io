@@ -72,7 +72,12 @@ The site will automatically rebuild when you make changes to the source files.
 
 ## Pre-commit Setup (Optional)
 
-This project uses pre-commit hooks to automatically lint Markdown files before each commit.
+This project uses pre-commit hooks to automatically check code quality before each commit.
+
+### What Pre-commit Checks
+
+- **Markdown Linting**: Uses `markdownlint-cli2` (Node.js) to enforce Markdown style guidelines
+- **YAML Linting**: Uses `yamllint` (Conda) to validate YAML syntax and formatting
 
 ### Installing Pre-commit
 
@@ -92,6 +97,12 @@ This project uses pre-commit hooks to automatically lint Markdown files before e
     pre-commit install
     ```
 
+3. Pre-commit will automatically create isolated environments and install dependencies:
+   - Node.js environment for `markdownlint-cli2`
+   - Conda environment for `yamllint`
+
+   The first run will take time to set up these environments.
+
 ### Running Pre-commit Manually
 
 To run pre-commit hooks on all files manually:
@@ -106,16 +117,31 @@ To run pre-commit on specific files:
 pre-commit run --files path/to/file.md
 ```
 
+To run a specific hook:
+
+```bash
+# Lint Markdown only
+pre-commit run lint-markdown --all-files
+
+# Lint YAML only
+pre-commit run lint-yaml --all-files
+```
+
 ### Pre-commit Configuration
 
-The project uses `markdownlint-cli2` to check Markdown files. The configuration is in `.pre-commit-config.yaml`.
+The pre-commit configuration is in `.pre-commit-config.yaml`:
+
+- **lint-markdown**: Checks all `.md` files using markdownlint-cli2 (runs in Node.js environment)
+- **lint-yaml**: Checks all `.yaml` and `.yml` files using yamllint (runs in Conda environment)
+
+Both tools run in isolated environments managed by pre-commit, so you don't need to install them manually.
 
 ### Troubleshooting
 
 If pre-commit fails:
 
 1. Review the error messages
-2. Fix the issues in your Markdown files
+2. Fix the issues in your files
 3. Stage the fixes: `git add .`
 4. Try committing again
 
