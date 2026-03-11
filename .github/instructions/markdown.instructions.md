@@ -23,6 +23,30 @@ Optional but recommended:
 - `tags: [tag1, tag2, tag3]`
 - `comments: true/false`
 
+## Series Configuration
+
+For posts that belong to a series, add these front matter fields:
+
+- `series: "Series Name"`
+- `series_part: 1` (use sequential numbers: 1, 2, 3...)
+
+Series rules:
+
+- Use the same `series` value across all posts in the same series
+- Ensure each post in a series has a unique `series_part`
+- Keep `series_part` numeric so navigation order is correct
+
+Example:
+
+```yaml
+---
+layout: post
+title: "My Series Post"
+series: "Machine Learning Basics"
+series_part: 2
+---
+```
+
 ## Content Structure
 
 - Use clear heading hierarchy (h2, h3, h4)

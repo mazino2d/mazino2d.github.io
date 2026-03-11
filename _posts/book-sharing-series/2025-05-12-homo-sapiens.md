@@ -2,6 +2,8 @@
 layout: post
 title: Sapiens - A Brief History of Humankind
 subtitle: How Homo sapiens conquered the world through myths, agriculture, and science
+series: "Book Sharing"
+series_part: 1
 # gh-repo: mazino2d/mazino2d.github.io
 # gh-badge: [star, fork, follow]
 tags: [book]

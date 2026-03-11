@@ -2,6 +2,8 @@
 layout: post
 title: Atomic Habits
 subtitle: How tiny changes create remarkable results and why 1% better every day matters
+series: "Book Sharing"
+series_part: 2
 # gh-repo: mazino2d/mazino2d.github.io
 # gh-badge: [star, fork, follow]
 tags: [book]

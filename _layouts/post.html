@@ -39,6 +39,10 @@ layout: base
         </div>
       {% endif %}
 
+      {% if page.series %}
+        {% include series-navigation.html %}
+      {% endif %}
+
       <article role="main" class="blog-post">
         {{ content }}
       </article>
@@ -58,6 +62,10 @@ layout: base
             {% include {{ file }} %}
           {% endfor %}
         </div>
+      {% endif %}
+
+      {% if page.series %}
+        {% include series-navigation.html %}
       {% endif %}
 
       {% if page.social-share %}

@@ -2,6 +2,8 @@
 layout: post
 title: The Psychology of Money
 subtitle: Why doing well with money has little to do with intelligence and everything to do with behavior
+series: "Book Sharing"
+series_part: 3
 tags: [book]
 comments: true
 ---
