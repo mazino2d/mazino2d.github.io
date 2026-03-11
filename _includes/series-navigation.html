@@ -23,23 +23,28 @@
       {% assign next_post = series_posts[next_index] %}
     {% endif %}
 
-    <div class="card mb-4">
-      <div class="card-body">
-        <p class="mb-2"><strong>Series:</strong> {{ page.series }}</p>
-        <p class="mb-3">
-          Part {{ page.series_part }} of {{ series_posts.size }}
-        </p>
-
-        <div class="d-flex flex-wrap" style="gap: 0.5rem;">
+    <nav style="margin: 2.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; border-left: 4px solid #0d6efd;">
+      <div style="font-size: 0.85rem; color: #6c757d; margin-bottom: 0.75rem;">
+        {{ page.series }} <span style="opacity: 0.5;">•</span> Part {{ page.series_part }} of {{ series_posts.size }}
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+        <div style="flex: 1;">
           {% if previous_post %}
-            <a class="btn btn-outline-primary btn-sm" href="{{ previous_post.url | relative_url }}">&larr; Previous Lesson</a>
+            <a href="{{ previous_post.url | relative_url }}" style="text-decoration: none; color: #495057; display: block;">
+              <span style="font-size: 0.75rem; color: #6c757d; display: block;">← Previous</span>
+              <span style="font-weight: 500;">{{ previous_post.title }}</span>
+            </a>
           {% endif %}
-
+        </div>
+        <div style="flex: 1; text-align: right;">
           {% if next_post %}
-            <a class="btn btn-primary btn-sm" href="{{ next_post.url | relative_url }}">Next Lesson &rarr;</a>
+            <a href="{{ next_post.url | relative_url }}" style="text-decoration: none; color: #495057; display: block;">
+              <span style="font-size: 0.75rem; color: #6c757d; display: block;">Next →</span>
+              <span style="font-weight: 500;">{{ next_post.title }}</span>
+            </a>
           {% endif %}
         </div>
       </div>
-    </div>
+    </nav>
   {% endif %}
 {% endif %}

@@ -1,0 +1,62 @@
+{% if page.series %}
+  {% assign series_posts = site.posts | where: "series", page.series | sort: "series_part" %}
+  {% assign series_count = series_posts.size %}
+
+  <div class="series-toc" style="margin-bottom: 2rem; border: 1px solid #e9ecef; border-radius: 8px; overflow: hidden;">
+    <div style="background: #f8f9fa; padding: 0.75rem 1rem; border-bottom: 1px solid #e9ecef;">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-weight: 600; color: #212529;">
+          {{ page.series }}
+        </span>
+        <span style="font-size: 0.85rem; color: #6c757d;">
+          Part {{ page.series_part }} of {{ series_count }}
+        </span>
+      </div>
+    </div>
+    
+    <!-- Current post always visible -->
+    <div style="padding: 0.75rem 1rem; font-weight: 600; color: #0d6efd;">
+      {{ page.series_part }}. {{ page.title }}
+    </div>
+
+    <!-- Expandable full list -->
+    <div id="series-toc-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; border-top: 1px solid #e9ecef;">
+      <ol style="margin: 0; padding: 1rem 1rem 1rem 2.5rem; list-style-type: decimal;">
+        {% for post in series_posts %}
+          <li style="padding: 0.35rem 0; {% if post.url == page.url %}font-weight: 600; color: #0d6efd;{% else %}color: #495057;{% endif %}">
+            {% if post.url == page.url %}
+              {{ post.title }}
+            {% else %}
+              <a href="{{ post.url | relative_url }}" style="color: inherit; text-decoration: none;">
+                {{ post.title }}
+              </a>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+
+    <button 
+      id="series-toc-toggle" 
+      onclick="toggleSeriesToc()" 
+      style="width: 100%; padding: 0.6rem; background: #f8f9fa; border: none; border-top: 1px solid #e9ecef; cursor: pointer; font-size: 0.85rem; color: #6c757d; transition: background 0.2s;"
+      onmouseover="this.style.background='#e9ecef'" 
+      onmouseout="this.style.background='#f8f9fa'"
+    >
+      <span id="series-toc-toggle-text">Show all {{ series_count }} parts ▼</span>
+    </button>
+    <script>
+      function toggleSeriesToc() {
+        var content = document.getElementById('series-toc-content');
+        var toggleText = document.getElementById('series-toc-toggle-text');
+        if (content.style.maxHeight === '0px' || content.style.maxHeight === '') {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          toggleText.textContent = 'Collapse ▲';
+        } else {
+          content.style.maxHeight = '0px';
+          toggleText.textContent = 'Show all {{ series_count }} parts ▼';
+        }
+      }
+    </script>
+  </div>
+{% endif %}
