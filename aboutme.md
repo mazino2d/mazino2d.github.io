@@ -42,8 +42,8 @@ Jul 2023 - Apr 2024
 Apr 2022 - Jun 2023
 
 - Built **music feature store** for **ZingMP3** generating audio attributes (**danceability**, **energy**, **tempo**, **valence**) for recommendation systems using deep learning (CNN + LSTM).
-- Delivered a **production recommendation engine** for **ZingMP3** combining collaborative and content-based methods, extending continue-song list length from **13 to 16** and growing adoption from **5M to 8M users**.
-- Launched NLP-driven article recommendation systems for **ZingNews** (**TF-IDF**, **BM25**, **NER**, **POS tagging**, word segmentation), increasing views in recommendation sections by **200%**.
+- Delivered a **recommendation engine** for **ZingMP3** combining collaborative and content-based methods, **extending continue-song list length from 13 to 16** and **growing adoption from 5M to 8M users**.
+- Launched NLP-driven article recommendation systems for **ZingNews** (TF-IDF, BM25, NER, POS tagging, word segmentation), **increasing views in recommendation sections by 200%**.
 
 ### Data Engineer - Zalo (VNG)
 
