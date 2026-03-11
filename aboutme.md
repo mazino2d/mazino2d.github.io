@@ -22,31 +22,31 @@ Data Scientist with 6+ years of experience building production-grade machine lea
 
 May 2024 - Present
 
-- Architected and deployed end-to-end credit scoring systems using bank and partner data, achieving around 40 Gini and helping scale loan disbursement while keeping bad debt within target.
-- Built reliable and reproducible ML infrastructure with DBT, XGBoost, IaC, artifact versioning, real-time monitoring, and alerting to ensure stable model operations in production.
+- Architected and deployed end-to-end **credit scoring systems** using bank and partner data, achieving around **40 Gini** and helping scale loan disbursement while keeping **bad debt within target**.
+- Built reliable and reproducible **ML infrastructure** with **DBT**, **XGBoost**, **IaC**, artifact versioning, real-time monitoring, and alerting to ensure **stable model operations** in production.
 
 ### Senior Data Scientist - Zalo (VNG)
 
 Jul 2023 - Apr 2024
 
-- Developed and deployed a multi-genre audio classification model using Transformer and CNN on Mel spectrograms for automated music tagging.
-- Architected and launched a personalized playlist system for millions of ZingMP3 users, increasing homepage CTR from 3% to 8%.
+- Developed and deployed a **multi-genre audio classification model** using **Transformer** and **CNN** on Mel spectrograms for automated music tagging.
+- Architected and launched a **personalized playlist system** for millions of ZingMP3 users, increasing homepage **CTR from 3% to 8%**.
 - Led end-to-end ML pipeline delivery from data collection and feature engineering to deployment and production monitoring.
 
 ### Data Scientist - Zalo (VNG)
 
 Apr 2022 - Jun 2023
 
-- Designed deep learning models (CNN + LSTM) for extracting music attributes (danceability, energy, tempo, valence) from audio.
-- Implemented a production recommendation engine combining collaborative and content-based methods, extending continue-song list length from 13 to 16 and growing adoption from 5M to 8M users.
-- Built NLP-driven article recommendation systems (TF-IDF, BM25, NER, POS tagging, word segmentation), increasing views in recommendation sections by 200%.
+- Designed deep learning models (**CNN + LSTM**) for extracting **music attributes** (danceability, energy, tempo, valence) from audio.
+- Implemented a **production recommendation engine** combining collaborative and content-based methods, extending continue-song list length from **13 to 16** and growing adoption from **5M to 8M users**.
+- Built NLP-driven article recommendation systems (**TF-IDF**, **BM25**, **NER**, **POS tagging**, word segmentation), increasing views in recommendation sections by **200%**.
 
 ### Data Engineer - Zalo (VNG)
 
 Feb 2021 - Mar 2022
 
-- Architected and deployed a data platform for A/B testing, real-time analytics, and visualization dashboards.
-- Engineered large-scale data pipelines with Java, Spark, and Hadoop for billions of events; integrated MySQL and Redis for low-latency access.
+- Architected and deployed a data platform for **A/B testing**, **real-time analytics**, and **visualization dashboards**.
+- Engineered large-scale data pipelines with **Java**, **Spark**, and **Hadoop** for billions of events; integrated **MySQL** and **Redis** for low-latency access.
 
 ### Software Development Collaborator - Zalo (VNG)
 
@@ -69,8 +69,8 @@ Jun 2019 - Jan 2020
 
 Ho Chi Minh University of Technology
 
-- Implemented a Multistream Attention-Enhanced Adaptive Graph Convolutional Neural Network (MS-AAGCN) for skeleton-based action recognition in PyTorch.
-- Achieved competitive benchmark performance for spatial-temporal human activity understanding.
+- Implemented a **Multistream Attention-Enhanced Adaptive Graph Convolutional Neural Network (MS-AAGCN)** for skeleton-based action recognition in **PyTorch**.
+- Achieved **competitive benchmark performance** for spatial-temporal human activity understanding.
 
 ## Education
 
