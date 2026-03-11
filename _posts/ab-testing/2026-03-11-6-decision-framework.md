@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "A/B Testing Series (Part 6): Decision Framework"
+title: "Decision Framework"
 subtitle: "From trustworthy data to clear rollout decisions"
-tags: [ab-testing, product-strategy, experimentation]
+tags: [ab-testing]
 comments: true
-series: "A/B Testing From Zero to Decision"
+series: "A/B Testing"
 series_part: 6
 ---
 

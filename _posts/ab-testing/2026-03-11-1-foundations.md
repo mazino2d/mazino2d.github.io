@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "A/B Testing Series (Part 1): Foundations"
+title: "Foundations"
 subtitle: "Core concepts: hypotheses, conversion rates, and random variation"
-tags: [ab-testing, experimentation, statistics]
+tags: [ab-testing]
 comments: true
-series: "A/B Testing From Zero to Decision"
+math: true
+series: "A/B Testing"
 series_part: 1
 ---
 

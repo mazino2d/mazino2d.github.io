@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "A/B Testing Series (Part 3): Power and Sample Size"
+title: "Power and Sample Size"
 subtitle: "How to design experiments that can actually detect real effects"
-tags: [ab-testing, power-analysis, statistics]
+tags: [ab-testing]
 comments: true
-series: "A/B Testing From Zero to Decision"
+math: true
+series: "A/B Testing"
 series_part: 3
 ---
 

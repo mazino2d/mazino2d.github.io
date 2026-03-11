@@ -22,7 +22,7 @@ author: Urek Mazino
 
 navbar-links:
   About Me: "aboutme"
-  Tags: "/tags"
+  CV: "cv"
 
 ################
 # --- Logo --- #
@@ -47,7 +47,7 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "mazino2d@gmail.com"
+  email: "khoidd@outlook.com"
   github: mazino2d
   linkedin: khoidd
 #  rss: true  # remove this line if you don't want to show an RSS link at the bottom
@@ -102,6 +102,13 @@ feed_show_excerpt: true
 
 # Whether or not to show a list of tags below each post preview in the feed page
 feed_show_tags: true
+
+# Series to display on the home page.
+# Order in this list is the exact render order on home.
+# Leave empty to show all series (alphabetical by series name).
+home_series:
+  - "Book Sharing"
+  - "A/B Testing"
 
 # Add a search button to the navbar
 post_search: true

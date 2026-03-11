@@ -1,37 +1,5 @@
 # Mazino Space
 
-Personal blog and portfolio website built with Jekyll and Beautiful Jekyll theme, hosted on GitHub Pages.
-
-## About
-
-This is my personal space on the internet where I share insights and write about topics that interest me, including:
-
-- 💰 Money & Finance
-- ✈️ Travel
-- 🗣️ English
-- 💻 Code & Technology
-- 📚 Book Summaries
-
-Visit the live site at: [https://mazino2d.github.io](https://mazino2d.github.io)
-
-## Features
-
-- Clean and responsive design using Beautiful Jekyll theme
-- Blog posts with tags and categories
-- About me page
-- Social media integration
-- Comment system support (Disqus, Giscus, Utterances)
-- Google Analytics integration
-- SEO optimized
-
-## Technology Stack
-
-- **Jekyll**: Static site generator
-- **Beautiful Jekyll**: Theme template
-- **GitHub Pages**: Hosting platform
-- **Markdown**: Content writing
-- **HTML/CSS/JavaScript**: Frontend
-
 ## Local Development
 
 ### Prerequisites
@@ -136,21 +104,6 @@ The pre-commit configuration is in `.pre-commit-config.yaml`:
 
 Both tools run in isolated environments managed by pre-commit, so you don't need to install them manually.
 
-### Troubleshooting
-
-If pre-commit fails:
-
-1. Review the error messages
-2. Fix the issues in your files
-3. Stage the fixes: `git add .`
-4. Try committing again
-
-To skip pre-commit hooks (not recommended):
-
-```bash
-git commit --no-verify
-```
-
 ## Project Structure
 
 ```plaintext
@@ -207,11 +160,5 @@ This project uses the Beautiful Jekyll theme. See [LICENSE](LICENSE) for details
 
 ## Contact
 
-- **Email**: <mazino2d@gmail.com>
+- **Email**: <khoidd@outlook.com>
 - **GitHub**: [@mazino2d](https://github.com/mazino2d)
-
-## Acknowledgments
-
-- [Beautiful Jekyll](https://beautifuljekyll.com/) - Theme by Dean Attali
-- [GitHub Pages](https://pages.github.com/) - Hosting platform
-- [Jekyll](https://jekyllrb.com/) - Static site generator

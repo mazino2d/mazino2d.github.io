@@ -12,7 +12,7 @@ This is a personal blog hosted on GitHub Pages. Security updates are applied to 
 
 If you discover a security vulnerability in this blog, please report it by:
 
-1. **Email**: Send details to [mazino2d@gmail.com]
+1. **Email**: Send details to [khoidd@outlook.com]
 2. **GitHub**: Open a private security advisory in this repository
 
 ### What to Include

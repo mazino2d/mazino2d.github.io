@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "A/B Testing Series (Part 5): Pitfalls Part 2"
+title: "Pitfalls Part 2"
 subtitle: "Twyman's Law, underpowered tests, peeking, and overdue experiments"
-tags: [ab-testing, statistics, experimentation]
+tags: [ab-testing]
 comments: true
-series: "A/B Testing From Zero to Decision"
+series: "A/B Testing"
 series_part: 5
 ---
 

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "A/B Testing Series (Part 4): Pitfalls Part 1"
+title: "Pitfalls Part 1"
 subtitle: "Lucky day traps, SRM, base-rate mismatch, and data loss"
-tags: [ab-testing, experimentation, data-quality]
+tags: [ab-testing]
 comments: true
-series: "A/B Testing From Zero to Decision"
+series: "A/B Testing"
 series_part: 4
 ---
 

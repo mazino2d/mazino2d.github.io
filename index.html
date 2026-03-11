@@ -1,5 +1,48 @@
 ---
-layout: home
-title: Mazino Space
-subtitle: Code for fun!
+layout: page
 ---
+
+{% assign all_grouped_series = site.posts | where_exp: "post", "post.series" | group_by: "series" %}
+{% assign grouped_series = "" | split: "" %}
+{% if site.home_series and site.home_series.size > 0 %}
+	{% for series_name in site.home_series %}
+		{% assign matched_series = all_grouped_series | where: "name", series_name %}
+		{% if matched_series.size > 0 %}
+			{% assign grouped_series = grouped_series | concat: matched_series %}
+		{% endif %}
+	{% endfor %}
+{% else %}
+	{% assign grouped_series = all_grouped_series | sort: "name" %}
+{% endif %}
+
+{% if grouped_series.size > 0 %}
+	{%- for series in grouped_series -%}
+		<a href="#{{- series.name -}}" class="btn btn-primary tag-btn">
+			<i class="fas fa-book" aria-hidden="true"></i>&nbsp;{{- series.name -}}&nbsp;({{ series.items.size }})
+		</a>
+	{%- endfor -%}
+
+	<div id="full-series-list">
+	{%- for series in grouped_series -%}
+		<h2 id="{{- series.name -}}" class="linked-section">
+			<i class="fas fa-book" aria-hidden="true"></i>
+			&nbsp;{{- series.name -}}&nbsp;({{ series.items.size }})
+		</h2>
+		<div class="post-list">
+			{%- assign series_posts = series.items | sort: "series_part" -%}
+			{%- for post in series_posts -%}
+				<div class="tag-entry">
+					<a href="{{ post.url | relative_url }}">
+						{%- if post.series_part -%}
+							Part {{ post.series_part }}:&nbsp; 
+						{%- endif -%}
+						{{- post.title | strip_html -}}
+					</a>
+				</div>
+			{%- endfor -%}
+		</div>
+	{%- endfor -%}
+	</div>
+{% else %}
+	<p>No series found yet. Add <code>series</code> and <code>series_part</code> to post front matter to organize posts here.</p>
+{% endif %}

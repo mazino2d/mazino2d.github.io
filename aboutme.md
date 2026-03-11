@@ -30,7 +30,7 @@ Each post is written for my future self, but I hope you'll find value in these n
 
 ## Let's Connect
 
-- Email: <mazino2d@gmail.com>
+- Email: <khoidd@outlook.com>
 - Github: <https://github.com/mazino2d>
 
 Thank you for visiting my website. Happy reading!

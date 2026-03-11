@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "A/B Testing Series (Part 2): Statistical Significance"
+title: "Statistical Significance"
 subtitle: "P-values, confidence intervals, and Type I/II errors"
-tags: [ab-testing, statistics, p-value]
+tags: [ab-testing]
 comments: true
-series: "A/B Testing From Zero to Decision"
+series: "A/B Testing"
 series_part: 2
 ---
 
