@@ -108,15 +108,15 @@ Both tools run in isolated environments managed by pre-commit, so you don't need
 
 ```plaintext
 .
-├── _config.yml           # Site configuration
-├── _posts/               # Blog posts
-├── _layouts/             # Page layouts
+├── _config.yml           # Site configuration (includes home_series order)
+├── _posts/               # Blog posts (organized in subdirectories by series)
+├── _layouts/             # Page layouts (includes series.html for series pages)
 ├── _includes/            # Reusable components
-├── _data/                # Data files
 ├── assets/               # Static assets (CSS, JS, images)
+├── series/               # Series index pages (one .md file per series)
 ├── aboutme.md            # About page
 ├── tags.html             # Tags page
-└── index.html            # Homepage
+└── index.html            # Homepage (shows series cards)
 ```
 
 ## Writing a New Post
@@ -134,6 +134,8 @@ Both tools run in isolated environments managed by pre-commit, so you don't need
     layout: post
     title: Your Post Title
     subtitle: Optional subtitle
+    series: "Series Name"
+    series_part: 1
     tags: [tag1, tag2]
     comments: true
     ---
@@ -142,6 +144,29 @@ Both tools run in isolated environments managed by pre-commit, so you don't need
 3. Write your content in Markdown below the front matter.
 
 4. Commit and push to GitHub. The site will automatically rebuild.
+
+## Adding a New Series
+
+1. Create a new file in `series/` (e.g., `series/my-series.md`):
+
+    ```yaml
+    ---
+    layout: series
+    title: "My Series"
+    series_name: "My Series"
+    description: "A short description of the series."
+    permalink: /series/my-series/
+    ---
+    ```
+
+2. Add the series name to `home_series` in `_config.yml` to control display order on the homepage:
+
+    ```yaml
+    home_series:
+      - "My Series"
+    ```
+
+3. Tag posts with `series: "My Series"` and `series_part: N` in their front matter.
 
 ## Configuration
 

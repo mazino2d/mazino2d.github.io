@@ -21,6 +21,8 @@ author: Urek Mazino
 ###############################################
 
 navbar-links:
+  caketool: "caketool"
+  DE Blog: "jaffle-shop"
   About Me: "aboutme"
 
 ################
@@ -106,9 +108,9 @@ feed_show_tags: true
 # Order in this list is the exact render order on home.
 # Leave empty to show all series (alphabetical by series name).
 home_series:
+  - "Credit Card Portfolio Management 101"
   - "Book Sharing"
   - "A/B Testing"
-  - "Credit Card Portfolio Management 101"
 
 # Add a search button to the navbar
 post_search: true

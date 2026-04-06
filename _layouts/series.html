@@ -1,0 +1,36 @@
+---
+layout: page
+---
+
+<style>
+  .intro-header .page-heading h1 { font-size: 2.2rem; }
+  @media (min-width: 768px) {
+    .intro-header .page-heading h1 { font-size: 2.5rem; }
+  }
+</style>
+
+{% if page.description %}
+  <p class="lead">{{ page.description }}</p>
+{% endif %}
+
+{% assign series_posts = site.posts | where: "series", page.series_name | sort: "series_part" %}
+
+<div class="series-post-list">
+  {% for post in series_posts %}
+    <div class="series-post-entry">
+      <div class="series-post-meta">
+        {% if post.series_part %}
+          <span class="series-part-badge">Part {{ post.series_part }}</span>
+        {% endif %}
+      </div>
+      <div class="series-post-content">
+        <h3 class="series-post-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title | strip_html }}</a>
+        </h3>
+        {% if post.subtitle %}
+          <p class="series-post-subtitle">{{ post.subtitle | strip_html }}</p>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
