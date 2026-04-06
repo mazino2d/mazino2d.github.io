@@ -82,13 +82,19 @@ The earlier an at-risk account is identified, the more options are available —
 
 ## Stage 5: Delinquency & Collections
 
-An account is delinquent when a payment is missed. Delinquency is typically tracked in buckets:
+An account is delinquent when a payment is missed. In Vietnam, the State Bank of Vietnam (SBV) mandates a five-tier debt classification under Circular 11/2021/TT-NHNN:
 
-- **1–29 DPD** (days past due): early stage, highest cure probability
-- **30–59 DPD**: mild delinquency
-- **60–89 DPD**: serious delinquency
-- **90–119 DPD**: severely delinquent
-- **120+ DPD**: pre-charge-off
+| Group | Name | DPD | Specific Provision | Status |
+| ------- | ------ | ----- | ------ | -------- |
+| **Group 1** | Standard | 0–10 days | 0% | Current or negligibly late; no credit concern |
+| **Group 2** | Special mention | 11–30 days | 5% | Early warning; enhanced monitoring required |
+| **Group 3** | Substandard | 31–90 days | 20% | NPL; significant credit risk |
+| **Group 4** | Doubtful | 91–180 days | 50% | NPL; recovery unlikely, loss almost certain |
+| **Group 5** | Loss | 181+ days | 100% | NPL; written off and moved off-balance-sheet |
+
+> Provision rates apply to the net exposure after deducting eligible collateral value. A general provision of 0.75% is also required across all Group 1–4 balances.
+
+Groups 3–5 are collectively classified as **non-performing loans (NPL)** — the headline metric that SBV monitors most closely. The required provisioning rises sharply from Group 3 onward, making NPL migration a direct hit to bank profitability.
 
 **Roll rates** measure the percentage of accounts that move from one delinquency bucket to the next in a given period. A rising 30→60 roll rate is an early warning that credit quality is deteriorating.
 
@@ -98,7 +104,7 @@ Collections strategy is segmented by risk and economics. High-balance accounts i
 
 ## Stage 6: Charge-Off & Recovery
 
-**Charge-off** is an accounting event: the bank writes the uncollected balance off its books as a loss. This typically happens at 180 DPD (6 months past due), though the account does not disappear — collection efforts continue.
+**Charge-off** is an accounting event: the bank writes the uncollected balance off its books as a loss. This typically happens at 180 DPD, when an account reaches Group 5 status — the point at which SBV requires **100% specific provisioning**, meaning the full expected loss has already been absorbed on the P&L. The write-off moves the balance off the balance sheet, but collection efforts continue off-book.
 
 Post-charge-off recovery options:
 
