@@ -87,22 +87,4 @@ Retention interventions:
 
 Success rates on reactivation campaigns are typically 5–15% — low in absolute terms, but with near-zero marginal cost, the ROI is high.
 
-## Portfolio-Level Stress Testing & Vintage Analysis
-
-**Vintage analysis** tracks cohorts by origination month and plots their loss performance over time. Each "vintage" produces a loss curve: cumulative net charge-off rate at 6, 12, 18, 24 months of age.
-
-Comparing vintages reveals policy changes: a vintage that curves upward faster than its predecessors at the same age signals that the origination quality of that cohort is worse — and that future losses are coming.
-
-**Stress testing** asks: what happens to the portfolio if unemployment rises 2 percentage points, or if interest rates spike, or if a specific industry sector experiences a downturn?
-
-Stress testing inputs:
-
-- Macro scenario assumptions (GDP, unemployment, rates)
-- Behavioral response assumptions (how roll rates change under stress)
-- Loss distribution modeling
-
-Outputs inform capital adequacy, loss reserve requirements, and whether the current underwriting posture is appropriate for the macro environment.
-
-Together, vintage analysis and stress testing are the most powerful tools for forward-looking portfolio management — seeing the problems before they arrive on the P&L.
-
-In Part 6, you will go deeper into the analytical models that power these strategies: scoring, cohort modeling, CLTV, and the quantitative foundations of portfolio risk.
+In Part 6, you will go deeper into the analytical models that power these strategies: scoring, vintage analysis, roll rate modeling, CLTV, and stress testing.
