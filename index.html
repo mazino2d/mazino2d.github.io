@@ -1,53 +1,96 @@
 ---
 layout: page
+title: "Mazino Space"
+share-description: "Finance domain knowledge, data science, and data engineering notes by Urek Mazino."
 ---
+
+<!-- Section: My Blogs -->
+<h5 class="mb-3 text-muted text-uppercase" style="font-size:0.8rem;letter-spacing:.08em;">My Blogs</h5>
+<div class="row mb-5">
+  <div class="col-md-6 mb-4">
+    <div class="series-card h-100">
+      <div class="series-card-body">
+        <div class="series-card-icon">
+          <i class="fas fa-brain" aria-hidden="true"></i>
+        </div>
+        <h3 class="series-card-title">Data Scientist Blog</h3>
+        <p class="series-card-desc">ML principles from problem design to production. Examples from credit risk and
+          real-world classification problems.</p>
+      </div>
+      <div class="series-card-footer">
+        <a href="https://mazino2d.github.io/caketool" class="series-card-link" target="_blank" rel="noopener">
+          Visit blog &rarr;
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-md-6 mb-4">
+    <div class="series-card h-100">
+      <div class="series-card-body">
+        <div class="series-card-icon">
+          <i class="fas fa-database" aria-hidden="true"></i>
+        </div>
+        <h3 class="series-card-title">Data Engineer Blog</h3>
+        <p class="series-card-desc">Pipeline design principles, not tools. Examples from the jaffle-shop reference
+          implementation.</p>
+      </div>
+      <div class="series-card-footer">
+        <a href="https://mazino2d.github.io/jaffle-shop/" class="series-card-link" target="_blank" rel="noopener">
+          Visit blog &rarr;
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Section: Domain Knowledge Series -->
+<h5 class="mb-3 text-muted text-uppercase" style="font-size:0.8rem;letter-spacing:.08em;">Domain Knowledge</h5>
 
 {% assign all_grouped = site.posts | where_exp: "post", "post.series" | group_by: "series" %}
 
 {% assign ordered_series = "" | split: "" %}
 {% if site.home_series and site.home_series.size > 0 %}
-  {% for series_name in site.home_series %}
-    {% assign matched = all_grouped | where: "name", series_name %}
-    {% if matched.size > 0 %}
-      {% assign ordered_series = ordered_series | concat: matched %}
-    {% endif %}
-  {% endfor %}
+{% for series_name in site.home_series %}
+{% assign matched = all_grouped | where: "name", series_name %}
+{% if matched.size > 0 %}
+{% assign ordered_series = ordered_series | concat: matched %}
+{% endif %}
+{% endfor %}
 {% else %}
-  {% assign ordered_series = all_grouped | sort: "name" %}
+{% assign ordered_series = all_grouped | sort: "name" %}
 {% endif %}
 
 {% if ordered_series.size > 0 %}
-  <div class="series-card-grid row">
-    {% for series_group in ordered_series %}
+<div class="series-card-grid row">
+  {% for series_group in ordered_series %}
 
-      {% assign series_page = site.pages | where: "series_name", series_group.name | first %}
+  {% assign series_page = site.pages | where: "series_name", series_group.name | first %}
 
-      <div class="col-md-6 col-lg-4 mb-4">
-        <div class="series-card h-100">
-          <div class="series-card-body">
-            <div class="series-card-icon">
-              <i class="fas fa-book-open" aria-hidden="true"></i>
-            </div>
-            <h3 class="series-card-title">{{ series_group.name }}</h3>
-            {% if series_page.description %}
-              <p class="series-card-desc">{{ series_page.description }}</p>
-            {% endif %}
-          </div>
-          <div class="series-card-footer">
-            <span class="series-post-count">
-              {{ series_group.items.size }} post{% if series_group.items.size != 1 %}s{% endif %}
-            </span>
-            {% if series_page %}
-              <a href="{{ series_page.url | relative_url }}" class="series-card-link">
-                Read series &rarr;
-              </a>
-            {% endif %}
-          </div>
+  <div class="col-md-6 mb-4">
+    <div class="series-card h-100">
+      <div class="series-card-body">
+        <div class="series-card-icon">
+          <i class="fas fa-book-open" aria-hidden="true"></i>
         </div>
+        <h3 class="series-card-title">{{ series_group.name }}</h3>
+        {% if series_page.description %}
+        <p class="series-card-desc">{{ series_page.description }}</p>
+        {% endif %}
       </div>
-
-    {% endfor %}
+      <div class="series-card-footer">
+        <span class="series-post-count">
+          {{ series_group.items.size }} post{% if series_group.items.size != 1 %}s{% endif %}
+        </span>
+        {% if series_page %}
+        <a href="{{ series_page.url | relative_url }}" class="series-card-link">
+          Read series &rarr;
+        </a>
+        {% endif %}
+      </div>
+    </div>
   </div>
-{% else %}
-  <p>No series found yet. Add <code>series</code> and <code>series_part</code> to post front matter to organize posts here.</p>
+
+  {% endfor %}
+</div>
 {% endif %}
