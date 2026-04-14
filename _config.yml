@@ -16,6 +16,12 @@ title: Mazino Space
 # Your name to show in the footer
 author: Urek Mazino
 
+# Production URL — required for jekyll-sitemap to generate correct absolute URLs
+url: "https://mazino2d.github.io"
+
+# Site-wide meta description (fallback for pages without explicit share-description)
+description: "Mazino Space — finance domain knowledge, data science, and data engineering notes by Urek Mazino."
+
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
@@ -77,7 +83,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-# rss-description: This website is a virtual proof that I'm awesome
+rss-description: "Mazino Space — finance domain knowledge, data science, and data engineering notes."
 
 ###########################
 # --- General options --- #
@@ -121,7 +127,7 @@ edit_page_button: true
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-# keywords: "my,list,of,keywords"
+keywords: "finance, credit risk, data science, data engineering, machine learning, Vietnam"
 
 ######################################
 # --- Colours / background image --- #

@@ -127,8 +127,10 @@
   {% else %}
   <meta name="twitter:card" content="summary">
   {% endif %}
+  {% if site.social-network-links.twitter %}
   <meta name="twitter:site" content="@{{ site.social-network-links.twitter }}">
   <meta name="twitter:creator" content="@{{ site.social-network-links.twitter }}">
+  {% endif %}
 
   <meta property="twitter:title" content="{{ title }}">
   <meta property="twitter:description" content="{{ description }}">
@@ -148,5 +150,30 @@
       {% include {{ file }} %}
     {% endfor %}
   {% endif %}
+
+  <script type="application/ld+json">
+  {%- if page.id -%}
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ title | jsonify }},
+    "description": {{ description | jsonify }},
+    "url": "{{ page.url | absolute_url }}",
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "author": { "@type": "Person", "name": {{ site.author | jsonify }} }{% if img != "" %},
+    "image": "{{ img | absolute_url }}"{% endif %}
+
+  }
+  {%- else -%}
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": {{ site.title | jsonify }},
+    "url": "{{ site.url }}/",
+    "description": {{ site.description | jsonify }},
+    "author": { "@type": "Person", "name": {{ site.author | jsonify }} }
+  }
+  {%- endif -%}
+  </script>
 
 </head>
