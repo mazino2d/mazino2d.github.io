@@ -25,7 +25,7 @@ Three standard label definitions in installment lending:
 
 **Choosing a label depends on three factors:**
 
-**Tenor.** For a 3-month payday-adjacent product, `dpd90_at_mob6` cannot be computed — the loan has already resolved. Use `fpd1` or `dpd30_within_mob3`. For a 24-month installment product, `dpd90_at_mob6` captures enough of the risk curve to be meaningful.
+**Tenor.** For a 3-month short-term product, `dpd90_at_mob6` cannot be computed — the loan has already resolved. Use `fpd1` or `dpd30_within_mob3`. For a 24-month installment product, `dpd90_at_mob6` captures enough of the risk curve to be meaningful.
 
 **Portfolio strategy.** If fraud prevention is the primary concern, `fpd1` is appropriate. If you are optimizing for lifetime credit performance, `dpd90_at_mob6` aligns incentives better.
 

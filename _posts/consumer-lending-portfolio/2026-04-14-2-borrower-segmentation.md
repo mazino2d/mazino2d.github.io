@@ -67,16 +67,4 @@ Where $RAM_k$ is the risk-adjusted margin on the $k$-th loan and $d$ is the disc
 
 The implication for strategy: acquisition economics must be evaluated not just on the first loan but on the expected loan sequence. A first-time borrower who is borderline-acceptable may become a strong long-term customer. The question is whether the first loan's economics justify the uncertainty.
 
-## Payday Note
-
-Payday lending compresses the segmentation problem to almost nothing. With a 30–45 day tenor, there is no in-life behavior to observe. The lender must make the entire risk decision — approval, amount, pricing — before disbursement, using only:
-
-- Bureau data (where available; thin-file borrowers are common in payday)
-- Application data (income, employment)
-- Possibly alternative data (bank account transaction history)
-
-The four behavioral archetypes still exist in a payday population, but the lender cannot observe them in-life. The responsible borrower and the chronic defaulter look identical at origination if their bureaus happen to be similar. Behavioral models — a powerful tool in installment lending — are simply not available.
-
-This is one reason payday lenders operate at very high rates: not only are the borrowers higher-risk on average, but the lender has no opportunity to observe and adjust. All the risk is priced at the front door.
-
 In Part 3, you will see how the loan lifecycle creates the observational opportunities that installment lending depends on — starting with the single most predictive event in the entire loan life: the first payment.

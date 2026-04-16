@@ -104,19 +104,4 @@ $$NCO\ Rate = \frac{\text{Gross Charge-offs} - \text{Recoveries}}{\text{Average 
 
 NCO is the credit loss measure that flows directly into P&L as Credit Loss provision. It is the metric that makes or breaks the margin calculation from Part 1.
 
-## Payday Note
-
-The payday loan lifecycle collapses to two events: disbursement and repayment/default. There is no in-life stage.
-
-- No behavioral triggers to set
-- No early intervention opportunities
-- No restructuring options
-- No DPD curve to monitor
-
-The entire observable lifecycle is 30–45 days. If the borrower repays, the loan closes. If the borrower cannot repay, the lender has one choice: roll over the loan (extend it, usually with an additional fee) or write it off.
-
-**Rollover policy** is the only management lever in payday. Whether to allow rollovers, how many, and at what cost is the equivalent of a restructuring policy in installment lending — but applied uniformly at the product level, not individually at the account level.
-
-This compresses the analytical problem dramatically: since you can observe nothing in-life, everything depends on the origination decision. And since most payday borrowers are thin-file or unscored, that origination decision is made under severe information constraints.
-
-In Part 4, you will see how portfolio-level metrics are built from aggregated loan lifecycle data — and why MOB (Month-on-Book) is the organizing dimension that makes installment lending measurable in a way that payday never can be.
+In Part 4, you will see how portfolio-level metrics are built from aggregated loan lifecycle data — and why MOB (Month-on-Book) is the organizing dimension that makes installment lending measurable.

@@ -122,14 +122,4 @@ A portfolio that looks healthy under current macroeconomic conditions may not su
 
 Stress testing is not prediction — it is preparing the organization to understand consequences before events occur.
 
-## Payday Note
-
-Payday portfolios have fewer management levers.
-
-**No restructuring.** The product is a single-payment obligation. There is no tenor to extend, no EMI to reduce. The only structural modification available is rollover — allowing the borrower to re-borrow (with an additional fee) rather than repaying. Rollover policy is therefore the central management lever, analogous to restructuring in installment lending but applied at the product level, not the account level.
-
-**Channel concentration is more acute.** Payday lenders typically operate through a smaller number of high-volume channels (single digital app, storefront network). Channel concentration is structural, not a policy failure — but it means a channel disruption can immediately collapse origination volume with no alternatives.
-
-**Stress testing is simpler but the tails are fatter.** Because all risk is concentrated at origination and resolved within 45 days, stress scenarios are essentially: "what happens to my default rate if macroeconomic conditions worsen?" The math is direct. But the lack of in-life management means there are no levers to pull during a stress event — the portfolio either performs or it does not.
-
 In Part 6, you will see how the risk models that underlie all of these decisions are built, monitored, and connected back to portfolio outcomes — closing the loop from data to model to policy to measurement.
