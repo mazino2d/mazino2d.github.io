@@ -4,7 +4,7 @@ title: "Borrower Segmentation"
 subtitle: "The four archetypes that determine how your portfolio performs under stress"
 tags: [consumer-lending, portfolio-management]
 comments: true
-math: true
+math: false
 series: "Consumer Lending Portfolio Management 101"
 series_part: 2
 ---
@@ -36,21 +36,6 @@ Experienced portfolio managers recognize four recurring borrower types. Bureau s
 
 **Chronic defaulters** should not be in the portfolio. If they appear in meaningful numbers, it indicates an underwriting failure or fraud. FPD rate (see Part 3) is the earliest signal.
 
-## Loan Purpose and Default Behavior
-
-The stated purpose of a loan influences the default probability and the shape of the default — not just whether a borrower defaults, but when and why.
-
-| Loan Purpose | Default Profile | Notes |
-| --- | --- | --- |
-| Debt consolidation | Predictable, if misused becomes worse | Borrower takes loan to pay off other debt; works if behavior changes |
-| Medical emergency | One-time shock, low moral hazard | Borrower generally wants to repay; income usually intact |
-| Business working capital | Outcome-dependent | Default tied to business performance, not personal willingness |
-| Lifestyle / consumption | Highest default risk | No asset purchase, no income improvement; pure consumption |
-
-Medical emergency loans have an important characteristic: the moral hazard is low. The borrower did not choose to have a medical event, and they typically have stable employment. The cash-flow shock is one-time. Contrast this with lifestyle consumption loans, where the borrower is using credit to fund spending they cannot sustain — a fundamentally different risk profile.
-
-Debt consolidation is deceptive. It looks safe (borrower is paying off higher-rate debt) but frequently fails because the underlying behavior that created the debt has not changed. A borrower who consolidates and then re-accumulates revolving debt is heading toward a worse position than before.
-
 ## Repeat Borrowers vs. First-Time Borrowers
 
 This distinction matters more in consumer lending than in most other financial products because the information asymmetry between lender and borrower collapses dramatically after the first loan.
@@ -59,12 +44,8 @@ This distinction matters more in consumer lending than in most other financial p
 
 **Repeat borrowers** have demonstrated behavior within your own system. You know their actual payment pattern, not just the bureau's summary of it. You know whether they cured delinquencies, whether they responded to contact, whether their income was consistent with stated amounts. This is significantly better information.
 
-The risk-adjusted economics of repeat borrowers are almost always superior:
+The economics of repeat borrowers are almost always superior: default risk is lower (you've observed their actual behavior), retention cost is a fraction of acquisition cost, and each successive loan is made with better information than the last. **The repeat borrower is the highest-value customer in the portfolio.**
 
-$$LTV_{repeat} = \sum_{k=1}^{K} \frac{RAM_k}{(1+d)^k}$$
-
-Where $RAM_k$ is the risk-adjusted margin on the $k$-th loan and $d$ is the discount rate. As $k$ increases, $CoR_k$ typically decreases (behavioral risk is better understood) while retention cost is lower than acquisition cost. The repeat borrower is the highest-LTV customer in the portfolio.
-
-The implication for strategy: acquisition economics must be evaluated not just on the first loan but on the expected loan sequence. A first-time borrower who is borderline-acceptable may become a strong long-term customer. The question is whether the first loan's economics justify the uncertainty.
+The implication for strategy: acquisition economics must be evaluated not just on the first loan but on the expected loan sequence. **A first-time borrower who is borderline-acceptable may become a strong long-term customer. The question is whether the first loan's economics justify the uncertainty.**
 
 In Part 3, you will see how the loan lifecycle creates the observational opportunities that installment lending depends on — starting with the single most predictive event in the entire loan life: the first payment.
