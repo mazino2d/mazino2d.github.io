@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Curriculum Vitae
-subtitle: Do Dang Khoi - Senior Data Scientist
+subtitle: Do Dang Khoi - Lead Data Scientist
 ---
 
 ## Summary
 
-Data Scientist with **6+ years of experience** leveraging data and machine learning to solve business problems at scale.
+Data Scientist with **7+ years of experience** leveraging data and machine learning to solve business problems at scale.
 
 **At Cake By VPBank**, designed end-to-end **credit scoring systems** that enabled aggressive loan disbursement growth while maintaining target bad debt ratios, directly supporting the bank's lending expansion strategy.
 
@@ -22,9 +22,15 @@ Data Scientist with **6+ years of experience** leveraging data and machine learn
 
 ## Experience
 
+### Lead Data Scientist - Cake By VPBank
+
+Jul 2026 - Present
+
+- Taking on new challenges in this role.
+
 ### Senior Data Scientist - Cake By VPBank
 
-May 2024 - Present
+May 2024 - Jun 2026
 
 - Designed and delivered end-to-end **credit scoring systems** leveraging bank and partner data, achieving around **40 Gini** and **enabling loan disbursement growth while keeping bad debt within target**.
 - Established **reliable** and **reproducible** **ML infrastructure** with DBT, XGBoost, IaC, MlFlow, real-time monitoring, and alerting to ensure **stable model operations** in production.
@@ -57,15 +63,15 @@ Feb 2021 - Mar 2022
 Feb 2020 - Jan 2021
 
 - Trained and mentored in **recommendation systems** research, exploring collaborative filtering, content-based, and hybrid approaches.
-- Built demo applications to showcase learned algorithms using *ReactJS*, *TypeScript*, *Java*, *MySQL*, *TensorFlow*, *Spark*, *pandas*, and *scikit-learn*.
+- Built demo applications to showcase the team's recommendation systems products using *ReactJS*, *TypeScript*, *Java*, *MySQL*, *TensorFlow*, *Spark*, *pandas*, and *scikit-learn*.
 - Collaborated with product and engineering teams to convert research into deployable features.
 
 ### Research Intern - High Performance Computing Lab (HCMUT)
 
 Jun 2019 - Jan 2020
 
-- Supported implementation of scalable on-demand data aggregation pipelines using Apache Kafka and Apache Nifi.
-- Conducted experiment design and performance measurements for data-intensive systems under faculty guidance.
+- Trained and mentored by lab researchers on building scalable on-demand data aggregation pipelines using Apache Kafka and Apache Nifi.
+- Assisted faculty with running experiments and collecting performance measurements for data-intensive systems under their guidance, contributing results used in academic publications.
 
 ## Education
 
@@ -79,10 +85,10 @@ Bachelor's Degree in Computer Science (2017 - 2021)
 
 ## Skills
 
-- **Domain Expertise**: Credit Scoring, Recommendation Systems
-- **Data Science**: **XGBoost**, **CatBoost**, **LightGBM**, **scikit-learn**, TensorFlow, PyTorch
-- **Data Engineering**: **DBT**, **Airflow**, **DataHub**, **BigQuery**, Apache Spark, Hadoop, Parquet
-- **Data Analytics**: **A/B Testing**, **Metrics Design**, **Dashboard & Visualization**, SQL, pandas, matplotlib
-- **Business Analysis**: **Data-Driven Decision Making**, Problem Framing, Experiment Design, Stakeholder Communication
-- **MLOps**: **MlFlow**, **Feast**, Kubernetes, Prometheus, Grafana, Terraform, Docker, Git, CI/CD, IaC, GCP
+- **Domain Expertise**: **Credit Scoring**, **Recommendation Systems**
+- **Business Analysis**: **Data-Driven Decision Making**, **Problem Framing**, **Experiment Design**, **Stakeholder Communication**
+- **Data Science**: XGBoost, CatBoost, LightGBM, scikit-learn, TensorFlow, PyTorch
+- **Data Engineering**: DBT, Airflow, DataHub, BigQuery, Apache Spark, Hadoop, Parquet
+- **Data Analytics**: A/B Testing, Metrics Design, Dashboard & Visualization, SQL, pandas, matplotlib
+- **MLOps**: MlFlow, Feast, Kubernetes, Prometheus, Grafana, Terraform, Docker, Git, CI/CD, IaC, GCP
 - **Languages**: Python, SQL, Java, Bash, JavaScript, C
