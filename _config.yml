@@ -115,6 +115,7 @@ feed_show_tags: true
 home_series:
   - "Credit Card Portfolio Management 101"
   - "Consumer Lending Portfolio Management 101"
+  - "Data Product Design for Data Scientists"
 
 # Add a search button to the navbar
 post_search: true
