@@ -37,22 +37,16 @@ It is tempting to borrow product management wholesale from software and apply it
 
 A software PO worries about whether users can find the button. A data product owner worries about whether users **believe** the number the button produces, and whether that number stays right six months after launch without anyone watching it. This is a categorically different kind of ownership — it requires understanding of statistical uncertainty, model decay, and the fact that a data product can fail invisibly while dashboards still render green.
 
-This is precisely why Data Scientists — not generalist PMs — are best positioned to own data products end to end. You already understand the failure modes; the missing piece is a repeatable process for turning that understanding into a product that gets built, adopted, and kept alive.
+This is precisely why Data Scientists — not generalist PMs — are best positioned to design data products, not just model them. You already understand the failure modes; the missing piece is a repeatable process for turning that understanding into a problem, a solution shape, and a plan that stakeholders actually sign off on.
 
-## The 5-Stage Map for This Series
+## The 3-Stage Map for This Series
 
-The rest of this series walks through a concrete, five-stage lifecycle for running a data product like a PO would — but adapted for the realities of models, data pipelines, and statistical uncertainty. Each stage gets its own part:
+This series focuses on the design work that happens *before* a single line of code is written — the part most consistently skipped, and the part that determines whether everything built afterward solves the right problem. Each stage gets its own part:
 
 1. **Problem Statement** (Part 2) — reframe the request into a user story, dig from pain point to root cause, and avoid solving symptoms.
 2. **Solution Design** (Part 3) — pick the right solution type (rule, model, dashboard, automation) and write requirements a dev or DS teammate can pick up without asking you ten follow-up questions.
 3. **Alignment** (Part 4) — the stage everyone skips, where you lock down pain point, root cause, solution, and success criteria with stakeholders *before* a single line of code is written.
-4. **Solution Development** (Part 5) — build with an MVP mindset, balance technical rigor against business deadlines, and keep non-technical stakeholders informed mid-build.
-5. **Review & Demo** (Part 6) — present results in a way that gets sign-off, not just admiration for the modeling technique.
-6. **Deployment** (Part 7) — go live safely: monitoring, rollback plans, and ownership defined before day one.
-7. **Maintenance** (Part 8) — the stage that determines whether your product survives past its first quarter: data quality, model performance, and business metric observability.
 
-The series closes with a full, anonymized case study (Part 9) walking one real project through all five stages end to end, plus a copy-paste checklist template.
-
-Notice that maintenance is not the end of the line — it feeds back into problem statement. Every data product in production surfaces new pain points, edge cases, and drift patterns that become the next cycle's Part 2. Treat the whole thing as a loop, not a straight line.
+The series closes with a full, anonymized case study (Part 5) walking one real project through all three stages end to end, plus a copy-paste checklist template.
 
 In Part 2, you will learn how to take a vague stakeholder request and turn it into a proper problem statement — starting with a user story that a non-technical stakeholder can actually validate.

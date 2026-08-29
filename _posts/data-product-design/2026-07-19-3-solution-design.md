@@ -17,7 +17,7 @@ A root cause does not imply one specific solution. The same root cause — "no r
 | Solution Type | Best When | Cost to Build | Cost to Maintain | Risk |
 | --- | --- | --- | --- | --- |
 | **Rule-based** | Pattern is simple, well-understood, and stable (e.g. "flag if DPD > 90") | Low | Low, but rules rot silently as behavior shifts | Under-fits complex patterns |
-| **Model** | Pattern is complex, enough labeled history exists, and the lift over rules is worth the overhead | Medium–High | Requires monitoring, retraining, ownership (Part 8) | Overfits, decays, needs explainability |
+| **Model** | Pattern is complex, enough labeled history exists, and the lift over rules is worth the overhead | Medium–High | Requires monitoring, retraining, ownership after launch | Overfits, decays, needs explainability |
 | **Dashboard** | The bottleneck is visibility, not decision automation — a human still makes the call | Low–Medium | Low, but only as good as the underlying metric definitions | Wrong metric ships, gets used wrong |
 | **Automation** | The decision itself is simple and repetitive once the ranking/rule/model exists | Medium | Needs rollback and override paths | Removes a human check that was silently catching edge cases |
 

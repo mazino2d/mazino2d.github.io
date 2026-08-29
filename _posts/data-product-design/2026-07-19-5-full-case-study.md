@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Full Case Study: Applying the Framework End to End"
-subtitle: "One anonymized project through all five stages, plus a copy-paste checklist"
+subtitle: "One anonymized project through all three stages, plus a copy-paste checklist"
 tags: [data-product, product-management, data-science]
 comments: true
 series: "Data Product Design for Data Scientists"
-series_part: 9
+series_part: 5
 ---
 
-This closing part walks one real project — details anonymized and simplified — through every stage covered in Parts 1 through 8, then leaves you with a checklist template built from the framework so you can apply it directly to your own next project.
+This closing part walks one real project — details anonymized and simplified — through every stage covered in Parts 1 through 4, then leaves you with a checklist template built from the framework so you can apply it directly to your own next project.
 
 ## The Request, As It Arrived
 
@@ -41,17 +41,11 @@ The alignment session included the collections lead, a risk team representative,
 - The risk representative flagged that a subset of accounts (active hardship/restructuring cases) needed to be excluded from automated de-prioritization for compliance reasons — this became an explicit "out of scope / excluded segment" item, not something discovered after launch.
 - The collections lead pushed back on the initial success criteria timeframe (one month), correctly pointing out that call outcomes lag by several weeks — the quarter-long window in the final criteria came directly from that pushback, not from the original design.
 
-Both changes were cheap at this stage and would have been expensive to discover after Phase B was already built and deployed.
+Both changes were cheap at this stage and would have been expensive to discover after development had already started.
 
-## Stage 4 — Solution Development
+## What Alignment Bought Us
 
-Phase A (the data join) took longer than the modeling itself — consistent with the MVP guidance in Part 5 to validate the pipeline before the model. Phase B started with a plain logistic regression on a handful of account and payment-history features. It cleared the success criteria in backtesting without needing anything more complex, so no further model sophistication was added. Weekly two-line updates went to the collections lead throughout Phase A, since that phase had no visible output yet and was the phase most at risk of feeling like silent progress.
-
-## Stage 5 — Review, Deployment & Maintenance
-
-The demo followed the Part 6 structure — problem, solution, backtested impact against the exact agreed metric, and a specific ask (approval for a soft launch on 20% of the queue). Two objections came up: a question about the excluded hardship segment (answered directly by pointing to the alignment recap) and a request to also rank accounts by expected recovery *amount*, not just likelihood — logged explicitly as a future-cycle candidate rather than folded in immediately.
-
-Deployment followed the Part 7 staged approach: two weeks in shadow mode comparing the new ranking against actual outcomes without changing agent behavior, then a 20% soft launch, then a phased widen after the monitoring in Part 8 confirmed stability across all three observability pillars. Three months in, the business metric monitoring pillar showed the reduction in wasted calls holding steady — with usage data showing the collections team had, on their own, started requesting the ranking be extended to a second product line, which became the next cycle's Part 2.
+With the pain point, root cause, solution shape, and success criteria all confirmed in writing, the collections lead, the risk representative, and the data engineering owner walked away from that session with the same understanding of what would get built and why. The excluded hardship segment and the quarter-long measurement window were both decided here — cheaply — rather than surfacing as objections after something had already shipped. That written recap became the reference point for every conversation that followed, and the point at which "design" ends and execution begins.
 
 ## Copy-Paste Checklist Template
 
@@ -73,31 +67,6 @@ ALIGNMENT
 [ ] Solution and explicit out-of-scope items confirmed
 [ ] Success criteria signed off with a number and timeframe
 [ ] Written recap sent same day
-
-SOLUTION DEVELOPMENT
-[ ] Simplest viable approach tried first
-[ ] Data pipeline validated before modeling complexity added
-[ ] "Wrong" vs. "not yet optimal" issues explicitly separated
-[ ] Regular, short progress updates sent to non-technical stakeholders
-
-REVIEW & DEMO
-[ ] Structure: problem → solution → impact (against agreed metric) → next step
-[ ] Impact reported against the exact success criteria metric, not a substitute
-[ ] Explicit ask made at the end of the meeting
-[ ] Objections logged and routed (answered now, or committed to a follow-up)
-
-DEPLOYMENT
-[ ] Monitoring live before go-live, not planned
-[ ] Rollback plan defined with a named owner and explicit trigger
-[ ] Product ownership assigned to a specific person
-[ ] Staged rollout planned (shadow / pilot / phased widen)
-
-MAINTENANCE
-[ ] Data Quality monitoring in place
-[ ] Model Performance monitoring in place
-[ ] Business Metric monitoring in place, tracked over time
-[ ] Retrain-vs-redesign criteria defined for when performance degrades
-[ ] New pain points surfaced in production routed back to Problem Statement
 ```
 
-That's the full loop. The framework in this series isn't a substitute for modeling skill — it's the missing half of the job that determines whether that modeling skill ever reaches production and stays useful once it's there. Treat each stage as seriously as you'd treat the model itself, and the gap between "good model" from Part 1 and "product actually used" closes considerably.
+That's the full design loop. The framework in this series isn't a substitute for modeling skill — it's the missing half of the job that determines whether that modeling skill ever gets built against the right problem in the first place. Treat each stage as seriously as you'd treat the model itself, and the gap between "good model" from Part 1 and "product actually used" closes considerably before a single line of code is written.
