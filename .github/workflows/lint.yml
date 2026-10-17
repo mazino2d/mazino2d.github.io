@@ -1,5 +1,7 @@
 name: Lint
 
+# CodeQL runs through the repository's default setup, not here.
+
 on:
   pull_request:
   workflow_dispatch:
@@ -17,8 +19,3 @@ jobs:
     with:
       markdownlint: true
 
-  codeql:
-    uses: mazino2d/github-workflows/.github/workflows/codeql-actions.yml@v1
-    permissions:
-      contents: read
-      security-events: write
