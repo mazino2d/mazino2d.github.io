@@ -1,0 +1,21 @@
+name: Lint
+
+# CodeQL runs through the repository's default setup, not here.
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: lint-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    uses: mazino2d/github-workflows/.github/workflows/lint.yml@v1
+    with:
+      markdownlint: true
+
