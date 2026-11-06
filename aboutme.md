@@ -33,7 +33,7 @@ Jul 2026 - Present
 May 2024 - Jun 2026
 
 - Designed and delivered end-to-end **credit scoring systems** leveraging bank and partner data, achieving around **40 Gini** and **enabling loan disbursement growth while keeping bad debt within target**.
-- Established **reliable** and **reproducible** **ML infrastructure** with DBT, XGBoost, IaC, MlFlow, real-time monitoring, and alerting to ensure **stable model operations** in production.
+- Established **reliable** and **reproducible** **ML infrastructure** with dbt, XGBoost, IaC, MLflow, real-time monitoring, and alerting to ensure **stable model operations** in production.
 
 ### Senior Data Scientist - Zalo (VNG)
 
@@ -70,7 +70,7 @@ Feb 2020 - Jan 2021
 
 Jun 2019 - Jan 2020
 
-- Trained and mentored by lab researchers on building scalable on-demand data aggregation pipelines using Apache Kafka and Apache Nifi.
+- Trained and mentored by lab researchers on building scalable on-demand data aggregation pipelines using Apache Kafka and Apache NiFi.
 - Assisted faculty with running experiments and collecting performance measurements for data-intensive systems under their guidance, contributing results used in academic publications.
 
 ## Education
@@ -88,7 +88,7 @@ Bachelor's Degree in Computer Science (2017 - 2021)
 - **Domain Expertise**: **Credit Scoring**, **Recommendation Systems**
 - **Business Analysis**: **Data-Driven Decision Making**, **Problem Framing**, **Experiment Design**, **Stakeholder Communication**
 - **Data Science**: XGBoost, CatBoost, LightGBM, scikit-learn, TensorFlow, PyTorch
-- **Data Engineering**: DBT, Airflow, DataHub, BigQuery, Apache Spark, Hadoop, Parquet
+- **Data Engineering**: dbt, Airflow, DataHub, BigQuery, Apache Spark, Hadoop, Parquet
 - **Data Analytics**: A/B Testing, Metrics Design, Dashboard & Visualization, SQL, pandas, matplotlib
-- **MLOps**: MlFlow, Feast, Kubernetes, Prometheus, Grafana, Terraform, Docker, Git, CI/CD, IaC, GCP
+- **MLOps**: MLflow, Feast, Kubernetes, Prometheus, Grafana, Terraform, Docker, Git, CI/CD, IaC, GCP
 - **Languages**: Python, SQL, Java, Bash, JavaScript, C
