@@ -33,7 +33,7 @@ Jul 2026 - Present
 May 2024 - Jun 2026
 
 - Designed and delivered end-to-end **credit scoring systems** leveraging bank and partner data, achieving around **40 Gini** and **enabling loan disbursement growth while keeping bad debt within target**.
-- Established **reliable** and **reproducible** **ML infrastructure** with dbt, XGBoost, IaC, MLflow, real-time monitoring, and alerting to ensure **stable model operations** in production.
+- Built the **foundation for reliable credit scoring products** across data, system, and model: **tested data pipelines** (dbt) and **model lifecycle management** (MLflow) with **real-time monitoring and alerting**, keeping scores **consistent and trustworthy in production**.
 
 ### Senior Data Scientist - Zalo (VNG)
 
@@ -41,7 +41,6 @@ Jul 2023 - Apr 2024
 
 - Delivered an **automated music genre tagging system** using Transformer and CNN on Mel spectrograms, **enabling self-service genre labeling for millions of songs on ZingMP3**.
 - Designed and launched a **personalized playlist system** for millions of ZingMP3 users, increasing homepage **CTR from 3% to 8%**.
-- Owned end-to-end ML pipeline from data collection and feature engineering to production monitoring.
 
 ### Data Scientist - Zalo (VNG)
 
@@ -62,16 +61,13 @@ Feb 2021 - Mar 2022
 
 Feb 2020 - Jan 2021
 
-- Trained and mentored in **recommendation systems** research, exploring collaborative filtering, content-based, and hybrid approaches.
-- Built demo applications to showcase the team's recommendation systems products using *ReactJS*, *TypeScript*, *Java*, *MySQL*, *TensorFlow*, *Spark*, *pandas*, and *scikit-learn*.
-- Collaborated with product and engineering teams to convert research into deployable features.
+- Explored **recommendation systems** research (collaborative filtering, content-based, hybrid) and built demo applications showcasing the team's products with *ReactJS*, *Java*, *TensorFlow*, and *Spark*.
 
 ### Research Intern - High Performance Computing Lab (HCMUT)
 
 Jun 2019 - Jan 2020
 
-- Trained and mentored by lab researchers on building scalable on-demand data aggregation pipelines using Apache Kafka and Apache NiFi.
-- Assisted faculty with running experiments and collecting performance measurements for data-intensive systems under their guidance, contributing results used in academic publications.
+- Supported lab researchers in building on-demand data aggregation pipelines (Apache Kafka, Apache NiFi) and running performance experiments for data-intensive systems.
 
 ## Education
 
@@ -80,8 +76,7 @@ Jun 2019 - Jan 2020
 Bachelor's Degree in Computer Science (2017 - 2021)
 
 - **GPA: 8.01**
-- **Relevant coursework**: Machine Learning, Computer Vision, Data Mining, Data Structures and Algorithms, Operating Systems, Computer Networks, Parallel Computing.
-- **Thesis (9.46/10)**: Surveyed existing action recognition methods and proposed a Multistream Attention-Enhanced Adaptive Graph Convolutional Neural Network (MS-AAGCN) for skeleton-based action recognition in PyTorch, achieving competitive benchmark performance.
+- **Thesis (9.46/10)**: MS-AAGCN, a multistream attention-enhanced adaptive graph convolutional network for skeleton-based action recognition (PyTorch).
 
 ## Skills
 
